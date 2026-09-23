@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Akeisha Keizen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <main class="app">
+    <section class="intro-card" id="introCard">
+      <button class="envelope" id="envelopeButton" type="button" aria-label="Open birthday envelope">
+        <span class="envelope-flap"></span>
+        <span class="envelope-body"></span>
+        <span class="envelope-heart">♥</span>
+      </button>
+      <p class="tap-text">Click the baby blue envelope</p>
+    </section>
+
+    <section class="birthday-card hidden" id="birthdayCard" aria-live="polite">
+      <p class="eyebrow">Baby Blue Birthday Greetings</p>
+      <h1>Happy Birthday, Akeisha Keizen!</h1>
+      <p class="message">
+        Wishing you a day filled with soft skies, sweet smiles, love, laughter, and unforgettable birthday magic.
+      </p>
+
+      <div class="question-box">
+        <h2>Will you accept this birthday surprise?</h2>
+        <div class="actions">
+          <button class="yes-button" id="yesButton" type="button">YES</button>
+          <button class="no-button" id="noButton" type="button">NO</button>
+        </div>
+        <p class="hint" id="hintText">Try pressing NO and watch what happens.</p>
+      </div>
+    </section>
+
+    <section class="popup hidden" id="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <div class="popup-card">
+        <button class="close-button" id="closePopup" type="button" aria-label="Close popup">×</button>
+        <h2 id="popupTitle">Surprise for Akeisha!</h2>
+        <img src="IMG_20260922_222050.jpg" alt="Birthday surprise for Akeisha Keizen">
+        <p>May this birthday be as beautiful and bright as a baby blue sky.</p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="birthdaySong" preload="auto" src="Billie_Eilish_-_BIRDS_OF_A_FEATHER__Official_Instrumental_(256k).mp3"></audio>
+</body>
+</html>
